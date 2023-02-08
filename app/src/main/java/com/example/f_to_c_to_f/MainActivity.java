@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 // Code for the button goes here
                 String celIn = celsiusInput.getText().toString();
                 Double celsiusTemp = Double.parseDouble(celIn);
-                Double toFah = ((9/5) * celsiusTemp) + 32;
+                Double toFah = ((9.0/5.0) * celsiusTemp) + 32.0;
                 fahOutput.setText(toFah.toString());
             }
         });
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 // Code for the button goes here
                 String fahIn = fahInput.getText().toString();
                 Double fahTemp = Double.parseDouble(fahIn);
-                Double toCelsius = (5/9)*(fahTemp - 32);
+                Double toCelsius = (5.0/9.0)*(fahTemp - 32.0);
                 celOutput.setText(toCelsius.toString());
             }
         });
